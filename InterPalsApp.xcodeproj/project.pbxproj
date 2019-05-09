@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C07BDEA7228386EF00FD808B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BDEA6228386EF00FD808B /* AppDelegate.swift */; };
+		C07BDEA9228386EF00FD808B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BDEA8228386EF00FD808B /* ViewController.swift */; };
+		C07BDEAC228386EF00FD808B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07BDEAA228386EF00FD808B /* Main.storyboard */; };
+		C07BDEAE228386F400FD808B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07BDEAD228386F400FD808B /* Assets.xcassets */; };
+		C07BDEB1228386F400FD808B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07BDEAF228386F400FD808B /* LaunchScreen.storyboard */; };
+		C07BDEBC228386F500FD808B /* InterPalsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BDEBB228386F500FD808B /* InterPalsAppTests.swift */; };
+		C07BDEC7228386F500FD808B /* InterPalsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BDEC6228386F500FD808B /* InterPalsAppUITests.swift */; };
+		C07BDED522838CEC00FD808B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C07BDED422838CEC00FD808B /* Icon.png */; };
+		C07BDED8228444FF00FD808B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07BDED7228444FF00FD808B /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C07BDEB8228386F500FD808B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07BDE9B228386EF00FD808B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07BDEA2228386EF00FD808B;
+			remoteInfo = InterPalsApp;
+		};
+		C07BDEC3228386F500FD808B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C07BDE9B228386EF00FD808B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C07BDEA2228386EF00FD808B;
+			remoteInfo = InterPalsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C07BDEA3228386EF00FD808B /* InterPalsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterPalsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07BDEA6228386EF00FD808B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C07BDEA8228386EF00FD808B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C07BDEAB228386EF00FD808B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C07BDEAD228386F400FD808B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C07BDEB0228386F400FD808B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C07BDEB2228386F400FD808B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07BDEB7228386F500FD808B /* InterPalsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterPalsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07BDEBB228386F500FD808B /* InterPalsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterPalsAppTests.swift; sourceTree = "<group>"; };
+		C07BDEBD228386F500FD808B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07BDEC2228386F500FD808B /* InterPalsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterPalsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07BDEC6228386F500FD808B /* InterPalsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterPalsAppUITests.swift; sourceTree = "<group>"; };
+		C07BDEC8228386F500FD808B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07BDED422838CEC00FD808B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C07BDED7228444FF00FD808B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C07BDEA0228386EF00FD808B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07BDED8228444FF00FD808B /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07BDEB4228386F500FD808B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07BDEBF228386F500FD808B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C07BDE9A228386EF00FD808B = {
+			isa = PBXGroup;
+			children = (
+				C07BDEA5228386EF00FD808B /* InterPalsApp */,
+				C07BDEBA228386F500FD808B /* InterPalsAppTests */,
+				C07BDEC5228386F500FD808B /* InterPalsAppUITests */,
+				C07BDEA4228386EF00FD808B /* Products */,
+				C07BDED6228444FE00FD808B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C07BDEA4228386EF00FD808B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C07BDEA3228386EF00FD808B /* InterPalsApp.app */,
+				C07BDEB7228386F500FD808B /* InterPalsAppTests.xctest */,
+				C07BDEC2228386F500FD808B /* InterPalsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C07BDEA5228386EF00FD808B /* InterPalsApp */ = {
+			isa = PBXGroup;
+			children = (
+				C07BDED422838CEC00FD808B /* Icon.png */,
+				C07BDEA6228386EF00FD808B /* AppDelegate.swift */,
+				C07BDEA8228386EF00FD808B /* ViewController.swift */,
+				C07BDEAA228386EF00FD808B /* Main.storyboard */,
+				C07BDEAD228386F400FD808B /* Assets.xcassets */,
+				C07BDEAF228386F400FD808B /* LaunchScreen.storyboard */,
+				C07BDEB2228386F400FD808B /* Info.plist */,
+			);
+			path = InterPalsApp;
+			sourceTree = "<group>";
+		};
+		C07BDEBA228386F500FD808B /* InterPalsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C07BDEBB228386F500FD808B /* InterPalsAppTests.swift */,
+				C07BDEBD228386F500FD808B /* Info.plist */,
+			);
+			path = InterPalsAppTests;
+			sourceTree = "<group>";
+		};
+		C07BDEC5228386F500FD808B /* InterPalsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C07BDEC6228386F500FD808B /* InterPalsAppUITests.swift */,
+				C07BDEC8228386F500FD808B /* Info.plist */,
+			);
+			path = InterPalsAppUITests;
+			sourceTree = "<group>";
+		};
+		C07BDED6228444FE00FD808B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07BDED7228444FF00FD808B /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C07BDEA2228386EF00FD808B /* InterPalsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07BDECB228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsApp" */;
+			buildPhases = (
+				C07BDE9F228386EF00FD808B /* Sources */,
+				C07BDEA0228386EF00FD808B /* Frameworks */,
+				C07BDEA1228386EF00FD808B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InterPalsApp;
+			productName = InterPalsApp;
+			productReference = C07BDEA3228386EF00FD808B /* InterPalsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C07BDEB6228386F500FD808B /* InterPalsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07BDECE228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsAppTests" */;
+			buildPhases = (
+				C07BDEB3228386F500FD808B /* Sources */,
+				C07BDEB4228386F500FD808B /* Frameworks */,
+				C07BDEB5228386F500FD808B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C07BDEB9228386F500FD808B /* PBXTargetDependency */,
+			);
+			name = InterPalsAppTests;
+			productName = InterPalsAppTests;
+			productReference = C07BDEB7228386F500FD808B /* InterPalsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C07BDEC1228386F500FD808B /* InterPalsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07BDED1228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsAppUITests" */;
+			buildPhases = (
+				C07BDEBE228386F500FD808B /* Sources */,
+				C07BDEBF228386F500FD808B /* Frameworks */,
+				C07BDEC0228386F500FD808B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C07BDEC4228386F500FD808B /* PBXTargetDependency */,
+			);
+			name = InterPalsAppUITests;
+			productName = InterPalsAppUITests;
+			productReference = C07BDEC2228386F500FD808B /* InterPalsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C07BDE9B228386EF00FD808B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Ryu Kikkawa";
+				TargetAttributes = {
+					C07BDEA2228386EF00FD808B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C07BDEB6228386F500FD808B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C07BDEA2228386EF00FD808B;
+					};
+					C07BDEC1228386F500FD808B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C07BDEA2228386EF00FD808B;
+					};
+				};
+			};
+			buildConfigurationList = C07BDE9E228386EF00FD808B /* Build configuration list for PBXProject "InterPalsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C07BDE9A228386EF00FD808B;
+			productRefGroup = C07BDEA4228386EF00FD808B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C07BDEA2228386EF00FD808B /* InterPalsApp */,
+				C07BDEB6228386F500FD808B /* InterPalsAppTests */,
+				C07BDEC1228386F500FD808B /* InterPalsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C07BDEA1228386EF00FD808B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07BDED522838CEC00FD808B /* Icon.png in Resources */,
+				C07BDEB1228386F400FD808B /* LaunchScreen.storyboard in Resources */,
+				C07BDEAE228386F400FD808B /* Assets.xcassets in Resources */,
+				C07BDEAC228386EF00FD808B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07BDEB5228386F500FD808B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07BDEC0228386F500FD808B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C07BDE9F228386EF00FD808B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07BDEA9228386EF00FD808B /* ViewController.swift in Sources */,
+				C07BDEA7228386EF00FD808B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07BDEB3228386F500FD808B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07BDEBC228386F500FD808B /* InterPalsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C07BDEBE228386F500FD808B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07BDEC7228386F500FD808B /* InterPalsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C07BDEB9228386F500FD808B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07BDEA2228386EF00FD808B /* InterPalsApp */;
+			targetProxy = C07BDEB8228386F500FD808B /* PBXContainerItemProxy */;
+		};
+		C07BDEC4228386F500FD808B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C07BDEA2228386EF00FD808B /* InterPalsApp */;
+			targetProxy = C07BDEC3228386F500FD808B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C07BDEAA228386EF00FD808B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07BDEAB228386EF00FD808B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C07BDEAF228386F400FD808B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C07BDEB0228386F400FD808B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C07BDEC9228386F500FD808B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C07BDECA228386F500FD808B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C07BDECC228386F500FD808B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZRQ692QU9;
+				INFOPLIST_FILE = InterPalsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kikkawa.InterPalsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C07BDECD228386F500FD808B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZRQ692QU9;
+				INFOPLIST_FILE = InterPalsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kikkawa.InterPalsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C07BDECF228386F500FD808B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZRQ692QU9;
+				INFOPLIST_FILE = InterPalsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kikkawa.InterPalsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterPalsApp.app/InterPalsApp";
+			};
+			name = Debug;
+		};
+		C07BDED0228386F500FD808B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZRQ692QU9;
+				INFOPLIST_FILE = InterPalsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kikkawa.InterPalsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterPalsApp.app/InterPalsApp";
+			};
+			name = Release;
+		};
+		C07BDED2228386F500FD808B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZRQ692QU9;
+				INFOPLIST_FILE = InterPalsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kikkawa.InterPalsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InterPalsApp;
+			};
+			name = Debug;
+		};
+		C07BDED3228386F500FD808B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AZRQ692QU9;
+				INFOPLIST_FILE = InterPalsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kikkawa.InterPalsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InterPalsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C07BDE9E228386EF00FD808B /* Build configuration list for PBXProject "InterPalsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07BDEC9228386F500FD808B /* Debug */,
+				C07BDECA228386F500FD808B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07BDECB228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07BDECC228386F500FD808B /* Debug */,
+				C07BDECD228386F500FD808B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07BDECE228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07BDECF228386F500FD808B /* Debug */,
+				C07BDED0228386F500FD808B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C07BDED1228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07BDED2228386F500FD808B /* Debug */,
+				C07BDED3228386F500FD808B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C07BDE9B228386EF00FD808B /* Project object */;
+}
