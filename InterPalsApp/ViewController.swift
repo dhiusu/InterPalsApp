@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import Kanna
 
 class ViewController: UIViewController {
 
@@ -79,7 +80,16 @@ extension ViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         webView.evaluateJavaScript("document.body.innerHTML", completionHandler: { (html, error) -> Void in
-            
+            do {
+                // Parsed html to setup tabbar badgeValue.
+                let doc = try HTML(html: html as! String, encoding: .utf8)
+                let newAlert = doc.css("span#pmNewCnt").first!.innerHTML!
+                if !newAlert.isEmpty {
+                    self.tabbar.items?.last!.badgeValue = newAlert
+                }
+            } catch {
+                print("Parser error.")
+            }
         })
     }
     
