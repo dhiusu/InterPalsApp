@@ -34,6 +34,11 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        webview.reload()
+    }
+    
     @objc func reloadWebView(_ sender: UIRefreshControl) {
         webview.reload()
         sender.endRefreshing()
