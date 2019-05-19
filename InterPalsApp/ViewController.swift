@@ -13,6 +13,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var webview: WKWebView!
     
+    @IBOutlet weak var tabbar: UITabBar!
+    private var tabbarIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,6 +28,9 @@ class ViewController: UIViewController {
         // Load to Interpals.
         webview.load(URLRequest(url: URL(string: "https://www.interpals.net")!))
         
+        // NavigationDelegate
+        webview.navigationDelegate = self
+        
     }
     
     @objc func reloadWebView(_ sender: UIRefreshControl) {
@@ -34,3 +40,47 @@ class ViewController: UIViewController {
     
 }
 
+// MARK: UITabBarDelegate
+extension ViewController: UITabBarDelegate {
+    
+    // Type tabbar index.
+    enum TabBarIndex: Int {
+        case Home       = 1
+        case Search     = 2
+        case Message    = 3
+    }
+    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        
+        if self.tabbarIndex != item.tag {
+            // Changing tabindex.
+            self.tabbarIndex = item.tag
+        } else {
+            // Skip process.
+            return
+        }
+        
+        var urlString = "https://www.interpals.net"
+        switch item.tag {
+        case TabBarIndex.Home.rawValue: urlString += "/app/account"
+        case TabBarIndex.Search.rawValue: urlString += "/app/search"
+        case TabBarIndex.Message.rawValue: urlString += "/pm.php"
+        default: break
+        }
+        
+        self.webview.load(URLRequest(url: URL(string: urlString)!))
+        
+    }
+    
+}
+
+// MARK: WKNavigationDelegate
+extension ViewController: WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        webView.evaluateJavaScript("document.body.innerHTML", completionHandler: { (html, error) -> Void in
+            
+        })
+    }
+    
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60DED810586659D4A583A3AC /* Pods_InterPalsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B9BF379F09050E1C6F154 /* Pods_InterPalsApp.framework */; };
+		9E16CDB0D9587E148457B3E7 /* Pods_InterPalsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFE84F54CF47DD625DBF2FB /* Pods_InterPalsAppUITests.framework */; };
+		BB3F4FB6DDB4B489C8CB846B /* Pods_InterPalsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008B1164DA6DFE952FBF522E /* Pods_InterPalsAppTests.framework */; };
 		C07BDEA7228386EF00FD808B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BDEA6228386EF00FD808B /* AppDelegate.swift */; };
 		C07BDEA9228386EF00FD808B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BDEA8228386EF00FD808B /* ViewController.swift */; };
 		C07BDEAC228386EF00FD808B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07BDEAA228386EF00FD808B /* Main.storyboard */; };
@@ -36,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008B1164DA6DFE952FBF522E /* Pods_InterPalsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterPalsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05220F751F650023BDB0FA58 /* Pods-InterPalsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterPalsApp.release.xcconfig"; path = "Target Support Files/Pods-InterPalsApp/Pods-InterPalsApp.release.xcconfig"; sourceTree = "<group>"; };
+		17DDBD24897E51A97867DAEB /* Pods-InterPalsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterPalsApp.debug.xcconfig"; path = "Target Support Files/Pods-InterPalsApp/Pods-InterPalsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		210CBF65948FFA84E175F250 /* Pods-InterPalsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterPalsAppUITests.release.xcconfig"; path = "Target Support Files/Pods-InterPalsAppUITests/Pods-InterPalsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3CFE84F54CF47DD625DBF2FB /* Pods_InterPalsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterPalsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		602EE717021793E75ABC8519 /* Pods-InterPalsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterPalsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-InterPalsAppTests/Pods-InterPalsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC99F179832B33948A65C181 /* Pods-InterPalsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterPalsAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-InterPalsAppUITests/Pods-InterPalsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C07BDEA3228386EF00FD808B /* InterPalsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterPalsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07BDEA6228386EF00FD808B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C07BDEA8228386EF00FD808B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		C07BDEC8228386F500FD808B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07BDED422838CEC00FD808B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		C07BDED7228444FF00FD808B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E3B8526239C895A1DD1478CD /* Pods-InterPalsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterPalsAppTests.release.xcconfig"; path = "Target Support Files/Pods-InterPalsAppTests/Pods-InterPalsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F97B9BF379F09050E1C6F154 /* Pods_InterPalsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterPalsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C07BDED8228444FF00FD808B /* WebKit.framework in Frameworks */,
+				60DED810586659D4A583A3AC /* Pods_InterPalsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB3F4FB6DDB4B489C8CB846B /* Pods_InterPalsAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E16CDB0D9587E148457B3E7 /* Pods_InterPalsAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,7 @@
 				C07BDEC5228386F500FD808B /* InterPalsAppUITests */,
 				C07BDEA4228386EF00FD808B /* Products */,
 				C07BDED6228444FE00FD808B /* Frameworks */,
+				E7554985A8F94ADFDF1D2991 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,8 +152,25 @@
 			isa = PBXGroup;
 			children = (
 				C07BDED7228444FF00FD808B /* WebKit.framework */,
+				F97B9BF379F09050E1C6F154 /* Pods_InterPalsApp.framework */,
+				008B1164DA6DFE952FBF522E /* Pods_InterPalsAppTests.framework */,
+				3CFE84F54CF47DD625DBF2FB /* Pods_InterPalsAppUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7554985A8F94ADFDF1D2991 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17DDBD24897E51A97867DAEB /* Pods-InterPalsApp.debug.xcconfig */,
+				05220F751F650023BDB0FA58 /* Pods-InterPalsApp.release.xcconfig */,
+				602EE717021793E75ABC8519 /* Pods-InterPalsAppTests.debug.xcconfig */,
+				E3B8526239C895A1DD1478CD /* Pods-InterPalsAppTests.release.xcconfig */,
+				AC99F179832B33948A65C181 /* Pods-InterPalsAppUITests.debug.xcconfig */,
+				210CBF65948FFA84E175F250 /* Pods-InterPalsAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C07BDECB228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsApp" */;
 			buildPhases = (
+				2DB98AFD0CEDF69DA405D647 /* [CP] Check Pods Manifest.lock */,
 				C07BDE9F228386EF00FD808B /* Sources */,
 				C07BDEA0228386EF00FD808B /* Frameworks */,
 				C07BDEA1228386EF00FD808B /* Resources */,
+				86D20EA4121AFBC2B152CC6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C07BDECE228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsAppTests" */;
 			buildPhases = (
+				37ACEA56EAB80439403194BB /* [CP] Check Pods Manifest.lock */,
 				C07BDEB3228386F500FD808B /* Sources */,
 				C07BDEB4228386F500FD808B /* Frameworks */,
 				C07BDEB5228386F500FD808B /* Resources */,
@@ -182,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C07BDED1228386F500FD808B /* Build configuration list for PBXNativeTarget "InterPalsAppUITests" */;
 			buildPhases = (
+				66AF8A7278F6EF1927BA6777 /* [CP] Check Pods Manifest.lock */,
 				C07BDEBE228386F500FD808B /* Sources */,
 				C07BDEBF228386F500FD808B /* Frameworks */,
 				C07BDEC0228386F500FD808B /* Resources */,
@@ -266,6 +303,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DB98AFD0CEDF69DA405D647 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InterPalsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37ACEA56EAB80439403194BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InterPalsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66AF8A7278F6EF1927BA6777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InterPalsAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D20EA4121AFBC2B152CC6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterPalsApp/Pods-InterPalsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InterPalsApp/Pods-InterPalsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C07BDE9F228386EF00FD808B /* Sources */ = {
@@ -446,6 +574,7 @@
 		};
 		C07BDECC228386F500FD808B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17DDBD24897E51A97867DAEB /* Pods-InterPalsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +593,7 @@
 		};
 		C07BDECD228386F500FD808B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05220F751F650023BDB0FA58 /* Pods-InterPalsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +612,7 @@
 		};
 		C07BDECF228386F500FD808B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602EE717021793E75ABC8519 /* Pods-InterPalsAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +634,7 @@
 		};
 		C07BDED0228386F500FD808B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B8526239C895A1DD1478CD /* Pods-InterPalsAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +656,7 @@
 		};
 		C07BDED2228386F500FD808B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC99F179832B33948A65C181 /* Pods-InterPalsAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,6 +677,7 @@
 		};
 		C07BDED3228386F500FD808B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 210CBF65948FFA84E175F250 /* Pods-InterPalsAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

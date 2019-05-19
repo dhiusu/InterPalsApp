@@ -19,24 +19,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBE-pi-1TR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="735"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Df-tG-D1L">
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem tag="1" title="Home" image="icons8-home" selectedImage="icons8-home" id="Ueg-gc-Cza" userLabel="Home"/>
+                                    <tabBarItem tag="2" title="Search" image="icons8-search" selectedImage="icons8-search" id="Nza-k7-eEW" userLabel="Search"/>
+                                    <tabBarItem tag="3" title="Message" image="icons8-message" selectedImage="icons8-message" id="kU0-aE-pKi"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uur-H7-Fdr"/>
+                                </connections>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" red="0.73967966159999998" green="0.91308220579999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8Df-tG-D1L" firstAttribute="top" secondItem="wBE-pi-1TR" secondAttribute="bottom" id="061-v6-aR7"/>
+                            <constraint firstItem="8Df-tG-D1L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6lK-fi-mGY"/>
+                            <constraint firstItem="8Df-tG-D1L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7o1-Nb-Sdq"/>
+                            <constraint firstItem="8Df-tG-D1L" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jby-Uj-MdV"/>
                             <constraint firstItem="wBE-pi-1TR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QM7-5A-pof"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wBE-pi-1TR" secondAttribute="trailing" id="TJB-Rl-Ywp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wBE-pi-1TR" secondAttribute="bottom" id="bkm-FR-gKV"/>
                             <constraint firstItem="wBE-pi-1TR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uoX-LD-NhK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="tabbar" destination="8Df-tG-D1L" id="XLY-SL-EQv"/>
                         <outlet property="webview" destination="wBE-pi-1TR" id="BhQ-dW-cpJ"/>
                     </connections>
                 </viewController>
@@ -45,4 +61,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-home" width="25" height="25"/>
+        <image name="icons8-message" width="25" height="25"/>
+        <image name="icons8-search" width="25" height="25"/>
+    </resources>
 </document>

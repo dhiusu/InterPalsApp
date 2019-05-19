@@ -1,0 +1,6 @@
+framework module Pods_InterPalsAppTests {
+  umbrella header "Pods-InterPalsAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
