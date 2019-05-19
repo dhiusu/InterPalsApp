@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tabbar: UITabBar!
     private var tabbarIndex = 0
+    private var isFirst = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +33,14 @@ class ViewController: UIViewController {
         // NavigationDelegate
         webview.navigationDelegate = self
         
+        // Set flag.
+        isFirst = false
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        webview.reload()
+        if !isFirst { webview.reload() }
     }
     
     @objc func reloadWebView(_ sender: UIRefreshControl) {
