@@ -39,6 +39,21 @@ class ViewController: UIViewController {
         sender.endRefreshing()
     }
     
+    // Is login
+    private func isLogin() -> Bool {
+        var result = false
+        let cookieStore = webview.configuration.websiteDataStore.httpCookieStore
+        cookieStore.getAllCookies { (cookies) in
+            for cookie in cookies {
+                if cookie.name == "interpals_sessid" {
+                    result = true
+                    break
+                }
+            }
+        }
+        return result
+    }
+    
 }
 
 // MARK: UITabBarDelegate
@@ -79,9 +94,16 @@ extension ViewController: UITabBarDelegate {
 extension ViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+        // Case by signouted.
+        if !isLogin() {
+            return
+        }
+        
         webView.evaluateJavaScript("document.body.innerHTML", completionHandler: { (html, error) -> Void in
             do {
                 // Parsed html to setup tabbar badgeValue.
+                self.tabbar.items?.last!.badgeValue = nil
                 let doc = try HTML(html: html as! String, encoding: .utf8)
                 let newAlert = doc.css("span#pmNewCnt").first!.innerHTML!
                 if !newAlert.isEmpty {
